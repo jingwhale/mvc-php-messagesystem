@@ -1,0 +1,24 @@
+form {
+				
+				width:300px;
+				margin:0 auto;
+	}
+form input {
+				width:120px;
+				height:30px;
+				margin-top:3px;
+	}
+form input.radio{
+				width:10px;
+				height:30px;
+				margin-top:0;
+				position:relative;
+				top:7px;
+}
+form img {
+				position:relative;
+				top:10px;
+}
+form .reset,.register {		
+				cursor:pointer;	
+}

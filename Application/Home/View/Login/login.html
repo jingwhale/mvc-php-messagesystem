@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<load href="__PUBLIC__/Css/basic.css" />
+	<load href="__PUBLIC__/Css/Home/login.css" />
+	<load href="__PUBLIC__/Js/jquery.js"/>
+	<script>
+		$(function(){
+			$('img[title="login"]').click(function(){
+				$('form[name="myForm"]').submit();
+			});
+
+			$('img[class="register"]').click(function(){
+					window.location='__APP__/Home/Register/reg';
+			});
+		});
+	</script>
+</head>
+<body>
+	<form action='__URL__/doLogin' method='post' name='myForm'>
+		用户名：<input type='text' name='username'/><br/>
+		密　码：<input type='password' name='password'/><br/>
+		验证码：<input type='text' name='code'/>
+		<img src='__MODULE__/Public/code' onclick="this.src=this.src+'?'+Math.random()"/><br/>
+		<img src='__PUBLIC__/Images/login.gif' title='login' class='submit'/>
+		<img src='__PUBLIC__/Images/register.gif' class='register'/>
+	</form>		
+</body>
+</html>

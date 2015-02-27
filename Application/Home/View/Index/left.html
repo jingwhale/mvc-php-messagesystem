@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Left</title>
+</head>
+<body>
+	<foreach name='list' item='vo'>
+		留言题目：{$vo.title}<br/>
+		<p>留言内容：</p>{$vo.content}<br/>
+		附件名：{$vo.filename}<br/>
+		{$vo.username}  {$vo.time|date='Y/m/d H:i:s',###}<br/>
+		<hr/>
+	</foreach>
+	{$show}
+</body>
+</html>
